@@ -1,0 +1,74 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+.navlogo {
+  position: relative;
+  font-size: 40px;
+  width: 75px;
+  margin: 40px;
+  height: 75px;
+  line-height: 75px;
+  display: inline-block;
+  color: #fff;
+}
+.navlogo:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 2px solid #e6e6e6;
+  content: '';
+  z-index: -1;
+  border-radius: 50%;
+}
+.navlogo:before,
+.navlogo:after {
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+.navlogo:hover,
+.navlogo:active,
+.navlogo.hover {
+  color: #c0392b;
+}
+.navlogo:hover:after,
+.navlogo:active:after,
+.navlogo.hover:after {
+  border-color: transparent #c0392b;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
+body {
+   background-image: linear-gradient(to left, #02aab0, #00cdac);
+}
+
+.navigationbar {
+  text-align:center;
+}
+
+#buttonarea {
+    margin: auto;
+    width: 25%;
+    padding: 10px;
+}
+
+.anibutton {
+float: left;
+display: block;
+margin: 1em;
+padding: 1em 2em;
+border: none;
+background: none;
+color: inherit;
+vertical-align: middle;
+position: relative;
+z-index: 1;
+-webkit-backface-visibility: hidden;
+letter-spacing: 2px;
+text-transform: uppercase;
+border: 2px solid #000;
+width:100%;
+color:#000;
+}

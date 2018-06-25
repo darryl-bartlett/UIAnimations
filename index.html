@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Animation Demo</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+</head>
+<body>
+<div class = "navigationbar">
+<a href="#" class="navlogo ion-ios-star-outline"></a>
+<a href="#" class="navlogo ion-ios-list-outline"></a>
+<a href="#" class="navlogo ion-ios-chatboxes-outline"></a>
+<a href="#" class="navlogo ion-ios-home-outline"></a>
+<a href="#" class="navlogo ion-ios-pie-outline"></a>
+<a href="#" class="navlogo ion-ios-gear-outline"></a>
+</div>
+<div id = "buttonarea">
+<button class="anibutton" onclick="changeBackground()">Change Background</button>
+<button class="anibutton">Option 2</button>
+<button class="anibutton">Option 3</button>
+<button class="anibutton">Option 4</button>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script  src="js/index.js"></script>
+    <script>
+    	TweenMax.staggerFrom('.anibutton', 1, {opacity:0}, 1);
+    </script>
+</body>
+</html>
